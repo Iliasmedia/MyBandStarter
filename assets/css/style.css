@@ -30,7 +30,8 @@ nav {
 	left:0;
 	position: absolute;
 	width: 100%;
-	background: #3498db;
+	background-color: #F06292;
+	/*background-color: #3498db;  BLAUW */
 	-webkit-box-shadow: 0 10px 6px -6px #d8d8d8;
        -moz-box-shadow: 0 10px 6px -6px #d8d8d8;
             box-shadow: 0 10px 6px -6px #d8d8d8;
@@ -99,9 +100,10 @@ h2 span.spacer {
 	text-align:center;
 }
 .info {
-	background-color:#81D4FA;
+	background-color: #F06292;
+	/*background-color: #3498db;  BLAUW */
 	padding:20px;
-	width:32%;
+	width:380px;
 	height:120px;
 	position:absolute;
 	margin-left:20px;
@@ -134,6 +136,24 @@ h2 span.spacer {
 	padding:5px;
 	cursor:pointer;
 }
+table.gridtable {
+	width:100%;
+	font-family: verdana,arial,sans-serif;
+	font-size:13px;
+	color:#fff;
+	border:1px collapse #e6e6e6;
+}
+table.gridtable th {
+	padding: 8px;
+	border:1px solid #e6e6e6;
+	background-color: #F06292;
+}
+table.gridtable td {
+	color:#000;
+	border:1px solid #e6e6e6;
+	padding: 8px;
+	background-color: #ffffff;
+}
 .containerNews {
 	max-width: 900px;
 	background-color: #fff;
@@ -146,7 +166,7 @@ h2 span.spacer {
   margin: 380px auto 0 auto;
   line-height: 1.65;
   padding: 20px 20px;
-  display: flex;
+  
   border:1px solid #e6e6e6;
   margin-bottom:30px;
 }
@@ -161,11 +181,20 @@ h2 span.spacer {
   background-color:#fff;
   border:1px solid #e6e6e6;
 }
-@media (min-width: 900px) {
+@media (min-width: 600px) {
   .call-outs-container {
     display: flex;
     justify-content: space-between;
   }
+}
+@media (max-width: 700px) {
+    .info {
+		position:static;
+		width:280px;
+		height:180px;
+		margin-left:0px;
+		display:block;
+	}
 }
 .date {
 	color:#ccc;
@@ -194,11 +223,20 @@ li a:link,li a:visited {
 li a:hover {
 	color:#fff;
 }
+a:link, a:visited {
+	font-weight:bold;
+	font-size:14px;
+	margin:10px;
+    color: #000;
+    text-decoration: none;
+}
 .active {
 	color:#fff !important;
 	border-bottom:3px solid #fff;
 }
 footer {
+	font-weight:bold;
+	font-size:14px;
 	padding:25px;
 	background-color:#fff;
 	height:15px;
@@ -227,7 +265,7 @@ label {
 }
 
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 800px) {
     label {
         display: block;
         cursor: pointer;

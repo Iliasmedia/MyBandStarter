@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-06-16 19:33:29
+/* Smarty version 3.1.30, created on 2017-06-17 19:29:35
   from "D:\xampp\htdocs\views\includes\footer.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_59441669098c05_61765373',
+  'unifunc' => 'content_594566ff125604_27417048',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'a9071579584e3f90d055473ab1c685ec2a3fc36e' => 
     array (
       0 => 'D:\\xampp\\htdocs\\views\\includes\\footer.tpl',
-      1 => 1497634304,
+      1 => 1497720572,
       2 => 'file',
     ),
   ),
@@ -20,13 +20,16 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_59441669098c05_61765373 (Smarty_Internal_Template $_smarty_tpl) {
+function content_594566ff125604_27417048 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 	</main>
 	<footer>
+	<?php echo $_smarty_tpl->tpl_vars['footer']->value;?>
+ 
 		<div class="wrapper">
-		<?php echo $_smarty_tpl->tpl_vars['footer']->value;?>
-
+		<a href="<?php echo $_smarty_tpl->tpl_vars['siteLink']->value;?>
+disclaimer">Disclaimer</a> | <a href="<?php echo $_smarty_tpl->tpl_vars['siteLink']->value;?>
+contact">Contact ons</a> <br> 
 		</div>
 	</footer>
 	<?php echo '<script'; ?>
