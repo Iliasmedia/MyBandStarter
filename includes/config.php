@@ -1,6 +1,6 @@
 <?php
 $title = 'Ricegum';
-$footer = 'Ilias - Mediacollege';
+$footer = 'Ilias MD1A RiceGum Project | PDO - SMARTY - PHP';
 $sitelink = 'http://localhost/';
 $smallNews_per_page = 2;
 

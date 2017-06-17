@@ -1,7 +1,8 @@
 	</main>
 	<footer>
+	{$footer} 
 		<div class="wrapper">
-		{$footer}
+		<a href="{$siteLink}disclaimer">Disclaimer</a> | <a href="{$siteLink}contact">Contact ons</a> <br> 
 		</div>
 	</footer>
 	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>

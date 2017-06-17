@@ -54,13 +54,19 @@ switch ($url) {
         //contact
 		$smarty->display('contact.tpl');
         break;
-	case 'pages':
-		require_once 'model/getpagination.php';
-		$smarty->assign('page', $page);
-        require_once 'model/getarticles.php';
-		$smarty->assign('article', $article);
-		$smarty->display('ajax/pages.tpl');
+	case 'videos':
+		$smarty->assign('active', "topvideos");
+		$smarty->display('includes/menu.tpl');
+        require_once 'model/gettopvideos.php';
+		$smarty->assign('topvideos', $topVideos);
+		$smarty->display('videos.tpl');
 	break;
+	case 'disclaimer':
+		$smarty->assign('active', false);
+		$smarty->display('includes/menu.tpl');
+		$smarty->display('disclaimer.tpl');
+	break;
+	
 }
 
 // footer
