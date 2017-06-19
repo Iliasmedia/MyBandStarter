@@ -1,5 +1,4 @@
 <?php
-// gefilterd in PDO
 
 $sql = $db->prepare("SELECT * FROM top_videos ORDER BY views DESC LIMIT 10"); 
 $sql->execute();

@@ -1,5 +1,5 @@
 <?php
-// gefilterd in PDO
+// GET wordt gefilterd in PDO
 $newsId = $_GET['p'];
 
 $sql = $db->prepare("SELECT * FROM articles WHERE id = :id LIMIT 1"); 
