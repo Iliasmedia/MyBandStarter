@@ -1,11 +1,7 @@
-# MyBandStarter
-Starter voor myband structuur
+# My Band Project
 
-Link naar uitgangspunt file:
-https://github.com/Iliasmedia/MyBandStarter/tree/master/doc/1
+This is a news website.
 
-Link naar moodboard:
-https://prnt.sc/f8uq12
+It's using a Smarty Framework and is made in PHP and PDO.
+You can only read the news and see more info about the subject.
 
-Ik heb een VPS gekocht voor mijn project omdat het raar deed op MA-cloud.
-Myband website link: http://185.114.225.28
